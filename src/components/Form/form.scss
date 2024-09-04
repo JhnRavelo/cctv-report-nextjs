@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.form-container {
+  padding: 15px 35px;
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: center;
+
+    label {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      width: 150px;
+    }
+
+    input {
+      display: block;
+      width: 260px;
+      height: 30px;
+      border-radius: 3px;
+      padding: 0 10px;
+      font-size: 14px;
+      font-weight: 300;
+      border: $gris 2px solid;
+      outline: none;
+      transition: 0.2s ease;
+      &:focus {
+        border-color: $blue;
+        box-shadow: 0 2px 6px $blue;
+      }
+    }
+  }
+}
